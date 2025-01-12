@@ -127,11 +127,11 @@ Pipe = im wesentlichen eine Funktion, die im Template zur string-Formatierung zu
 
 Beispiele:
 
-- `Today is {{ today | date }}`
+- `Today is {{ today | date:'fullDate' }}`
 - `My name is {{ name | uppercase }}`
 - `The price is {{ price | number:'1.2-2'}}`
 - `Debugging information: {{ todo | json }}`
-- `Total amount: {{total | currency:'EUR':'symbol':'1.2-2'}}`
+- `Total amount: {{ total | currency:'EUR':'symbol':'1.2-2' }}`
 
 ## Lokalisierung von Pipes
 
